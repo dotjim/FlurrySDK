@@ -4,7 +4,7 @@ EOT
 
 Pod::Spec.new do |s|
   s.name     = 'FlurrySDK'
-  s.version  = '6.3.0'
+  s.version  = '6.7.0'
   s.license  = { :type => 'Commercial', :text => license }
   s.summary  = 'FlurrySDK for analytics tracking and reporting. Also Ads included.'
   s.homepage = 'http://www.flurry.com'
@@ -19,13 +19,13 @@ Pod::Spec.new do |s|
     ss.libraries = "z"
     ss.frameworks = 'CoreGraphics', 'Foundation', 'MediaPlayer', 'SystemConfiguration', 'UIKit', 'Security'
     ss.weak_frameworks = 'AdSupport', 'StoreKit'
-    ss.vendored_libraries = 'Flurry/libFlurry_6.3.0.a'
+    ss.vendored_libraries = 'Flurry/libFlurry_6.7.0.a'
   end
 
   s.subspec 'FlurryAds' do |ss|
     ss.source_files = 'FlurryAds/**/*.h'
     ss.frameworks = 'iAd'
-    ss.vendored_libraries = 'FlurryAds/libFlurryAds_6.3.0.a'
+    ss.vendored_libraries = 'FlurryAds/libFlurryAds_6.7.0.a'
     ss.dependency 'FlurrySDK/FlurrySDK'
   end
 
